@@ -9,12 +9,18 @@
 
  ## Setup/Installation Requirements
 
- Clone this [repository](), download or switch to your directory, or open my index.html page.  
+ Clone this [repository](https://github.com/ofu997/PingPong), download or switch to your directory, or open my index.html page.  
 
  ## Known Bugs
 
- *
- 
+ ## Specifications
+ * Create an input field for user on html
+ * In JavaScript, create a function to store user input as a variable upon submission
+ * Create function for outputting "ping" if divisible by 3.
+ * Create functions for outputting "pong" and "ping-pong" if divisible by 5 or 15, respectably.
+ * Create a function to obtain new results with new numbers
+
+
  ## Technologies Used
 
  * HTML
