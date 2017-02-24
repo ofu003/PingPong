@@ -1,27 +1,35 @@
 //back-end function
 var PingPong=function(userInput){
   arr = [];
+  arrPong=[];
   for (var i=1; i<=userInput; i++){
     arr.push(i);
-    $(".outputDisplay").text(arr);
   }
+  // arr.forEach(function(i){
+  //   $(".outputDisplay").show();
+  //   $(".outputDisplay").append("<li>"+ i +"</li>");
+  // })
 
-  // if (userInput%15==0){
-  //   $(".outputDisplay").show();
-  //   $(".outputDisplay").text("Ping-Pong");
-  // }
-  // else if (userInput%5==0){
-  //   $(".outputDisplay").show();
-  //   $(".outputDisplay").text("Pong");
-  // }
-  // else if (userInput%3==0){
-  //   $(".outputDisplay").show();
-  //   $(".outputDisplay").text("Ping");
-  // }
-  // else{
-  //   $(".outputDisplay").show();
-  //   $(".outputDisplay").text(userInput);
-  // }
+  arr.forEach(function(i){
+    if (i%15==0){
+      $(".outputDisplay").show();
+      $(".outputDisplay").append("<li>" + "Ping-Pong" + "</li>");
+    }
+    else if (i%5==0){
+      $(".outputDisplay").show();
+      $(".outputDisplay").append("<li>" + "Pong" + "</li>");
+    }
+    else if (i%3==0){
+      $(".outputDisplay").show();
+      $(".outputDisplay").append("<li>" + "Ping" + "</li>");
+    }
+    else{
+      $(".outputDisplay").show();
+      $(".outputDisplay").append("<li>" + i + "</li>");
+    }
+  })
+
+
 }
 //front-end functions
 $(function(){
@@ -36,6 +44,7 @@ $(function(){
 
     $("#reset").click(function(){
       userInput="";
+      arr=[];
       $(".outputDisplay").hide();
     })
   })
