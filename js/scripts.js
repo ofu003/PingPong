@@ -1,14 +1,11 @@
 //back-end function
+
 var PingPong=function(userInput){
   arr = [];
-  arrPong=[];
   for (var i=1; i<=userInput; i++){
-    arr.push(i);
+  arr.push(i);
+  console.log(arr);
   }
-  // arr.forEach(function(i){
-  //   $(".outputDisplay").show();
-  //   $(".outputDisplay").append("<li>"+ i +"</li>");
-  // })
 
   arr.forEach(function(i){
     if (i%15==0){
@@ -28,8 +25,6 @@ var PingPong=function(userInput){
       $(".outputDisplay").append("<li>" + i + "</li>");
     }
   })
-
-
 }
 //front-end functions
 $(function(){
@@ -45,7 +40,9 @@ $(function(){
     $("#reset").click(function(){
       userInput="";
       arr=[];
-      $(".outputDisplay").hide();
+      $(".outputDisplay").text(arr);
+
+      //$(".outputDisplay").hide();
     })
   })
 })
