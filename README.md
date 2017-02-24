@@ -1,34 +1,34 @@
 # Ping Pong
 
- #### Week 3 project, 24 February 2017
+#### Week 3 project, 24 February 2017
 
- ## By Oliver Fu
+## By Oliver Fu
 
- ## Description
- A project for taking a user's number and displaying the word "ping" for multiples of 3, "pong" for multiples of 5, and "Ping-Pong" for multiples of 15.
+## Description
+A project for taking a user's number and displaying the word "ping" for multiples of 3, "pong" for multiples of 5, and "Ping-Pong" for multiples of 15.
 
- ## Setup/Installation Requirements
+## Setup/Installation Requirements
 
- Clone this [repository](https://github.com/ofu997/PingPong), download or switch to your directory, or open my index.html page.  
+Clone this [repository](https://github.com/ofu997/PingPong), download or switch to your directory, or open my index.html page.  
 
- ## Known Bugs
- * None yet
+## Known Bugs
+* None yet
 
- ## Specifications
- * Create an input field for user on html
- * In JavaScript, create a function to store user input as a variable upon submission
- * Create function for outputting "ping" if divisible by 3.
- * Create functions for outputting "pong" and "ping-pong" if divisible by 5 or 15, respectably.
- * Create a function to obtain new results with new numbers
+## Specifications
+* Create an input field for user on html
+* In JavaScript, create a function to store user input as a variable upon submission
+* Create function for outputting user's input, or "ping" if input is divisible by 3
+* Create functions for outputting "pong" and "ping-pong" if input is divisible by 5 or 15, respectably.
+* Create a function to obtain new results with new numbers
 
 
- ## Technologies Used
+## Technologies Used
 
- * HTML
- * CSS
- * Bootstrap
- * JQuery and JavaScript
+* HTML
+* CSS
+* Bootstrap
+* JQuery and JavaScript
 
- ## Licensing and Copyright
- MIT License
- Copyright (c) 2017 by Oliver Fu
+## Licensing and Copyright
+MIT License
+Copyright (c) 2017 by Oliver Fu
