@@ -5,13 +5,14 @@
  ## By Oliver Fu
 
  ## Description
-
+ A project for taking a user's number and displaying the word "ping" for multiples of 3, "pong" for multiples of 5, and "Ping-Pong" for multiples of 15.
 
  ## Setup/Installation Requirements
 
  Clone this [repository](https://github.com/ofu997/PingPong), download or switch to your directory, or open my index.html page.  
 
  ## Known Bugs
+ * None yet
 
  ## Specifications
  * Create an input field for user on html
