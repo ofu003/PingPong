@@ -26,7 +26,7 @@ $(function(){
       }
     })
   }
-//front-end functions
+//front-end 
   $("form#form").submit(function(event){
     event.preventDefault();
 
