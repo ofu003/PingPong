@@ -1,14 +1,15 @@
 //back-end
-$(function(){
   var PingPong=function(userInput){
   arr = [];
   for (var i=1; i<=userInput; i++){
   arr.push(i);
-  console.log(arr);
+  //console.log(arr);
   }
 
     arr.forEach(function(i){
       if (i%15==0){
+        //index at i
+        //make it a pingpong variable
         $(".outputDisplay").show();
         $(".outputDisplay").append("<li>" + "Ping-Pong" + "</li>");
       }
@@ -26,16 +27,17 @@ $(function(){
       }
     })
   }
-//front-end 
+
+//front-end
+$(function(){
   $("form#form").submit(function(event){
     event.preventDefault();
-
+    //store input as variable
     var userInput=$("#input").val();
-
+    //cars function for different behaviors
     PingPong(userInput);
-
+    //reset function
     $("#reset").show();
-
     $("#reset").click(function(){
       userInput="";
       arr=[];
