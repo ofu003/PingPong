@@ -19,14 +19,14 @@ Clone this [repository](https://github.com/ofu997/PingPong), download or switch 
 | Behavior |   Input   |   Output   |
 |----------|:---------:|:----------:|
 | Accept a number| 5 | 5 stored as variable  |
-| Populate array up to input | 5 | [1,2,3,4,5]|
-| return numbers in array divisible by 15 | 30 | [15,30] |
-| assign "Ping-Pong" string value to numbers in array divisible by 15| 15 | [1,2,3,...13,14,"Ping-Pong"]|
-| return numbers in array divisible by 5|10|[5,10]|
+| Count positive integers until input is reached | 5 | [1,2,3,4,5]|
+| return numbers in range divisible by 15 | 30 | [15,30] |
+| assign "Ping-Pong" string value to numbers in range divisible by 15| 15 | [1,2,3,...13,14,"Ping-Pong"]|
+| return numbers in range divisible by 5|10|[5,10]|
 | assign "Pong" string value to numbers divisible by 5|5|[1,2,3,4,"Pong"]|
-| Return numbers in array divisible by 3|6|[3,6]|
+| Return numbers in range divisible by 3|6|[3,6]|
 |assign "Ping" string value to numbers divisible by 3|6|[1,2,"Ping",4,5,"Ping"]|
-|Display array of numbers and assigned string values|15|[1,2,"Ping",4,"Pong","Ping",7,8,"Ping","Pong",11,"Ping",13,14,"Ping-Pong"]|
+|Display range of numbers and assigned string values|15|[1,2,"Ping",4,"Pong","Ping",7,8,"Ping","Pong",11,"Ping",13,14,"Ping-Pong"]|
 
 
 
