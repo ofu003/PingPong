@@ -15,13 +15,19 @@ Clone this [repository](https://github.com/ofu997/PingPong), download or switch 
 * None yet
 
 ## Specifications
-* Create an input field for user on html
-* In JavaScript, create a function to store user input as a variable upon submission
-* Make an array for range of numbers leading up to the user's number
-* Make a function to read each number in the range
-* Create function for outputting range of numbers, or "ping" if input is divisible by 3
-* Create functions for outputting "pong" and "ping-pong" if input is divisible by 5 or 15, respectably.
-* Create a button to obtain new results with new numbers
+
+| Behavior |   Input   |   Output   |
+|----------|:---------:|:----------:|
+| Accept a number| 5 | 5 stored as variable  |
+| Populate array up to input | 5 | [1,2,3,4,5]|
+| return numbers in array divisible by 15 | 30 | [15,30] |
+| assign "Ping-Pong" string value to numbers in array divisible by 15| 15 | [1,2,3,...13,14,"Ping-Pong"]|
+| return numbers in array divisible by 5|10|[5,10]|
+| assign "Pong" string value to numbers divisible by 5|5|[1,2,3,4,"Pong"]|
+| Return numbers in array divisible by 3|6|[3,6]|
+|assign "Ping" string value to numbers divisible by 3|6|[1,2,"Ping",4,5,"Ping"]|
+|Display array of numbers and assigned string values|15|[1,2,"Ping",4,"Pong","Ping",7,8,"Ping","Pong",11,"Ping",13,14,"Ping-Pong"]|
+
 
 
 ## Technologies Used

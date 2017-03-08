@@ -1,47 +1,51 @@
-//back-end
-  var PingPong=function(userInput){
-  arr = [];
+//declare universal variable to store numbers
+var arrayOfNumbers = [];
+//PingPong function populates arrayOfNumbers and assigns string values to numbers
+var PingPong=function(userInput){
+  //push numbers from 1 up to userInput value into //arrayOfNumbers
   for (var i=1; i<=userInput; i++){
-  arr.push(i);
-  //console.log(arr);
+  arrayOfNumbers.push(i);
   }
+  //assigns string values to numbers
+  arrayOfNumbers.forEach(function(number){
+    if (number%15==0){
+      arrayOfNumbers[(number-1)]="Ping-Pong";
+    }
+    else if (number%5==0){
+      arrayOfNumbers[(number-1)]="Pong";
+    }
+    else if(number%3==0){
+      arrayOfNumbers[(number-1)]="Ping";
+    }
+    else {
+    }
+  });
+};
 
-    arr.forEach(function(i){
-      if (i%15==0){
-        //index at i
-        //make it a pingpong variable
-        $(".outputDisplay").show();
-        $(".outputDisplay").append("<li>" + "Ping-Pong" + "</li>");
-      }
-      else if (i%5==0){
-        $(".outputDisplay").show();
-        $(".outputDisplay").append("<li>" + "Pong" + "</li>");
-      }
-      else if (i%3==0){
-        $(".outputDisplay").show();
-        $(".outputDisplay").append("<li>" + "Ping" + "</li>");
-      }
-      else{
-        $(".outputDisplay").show();
-        $(".outputDisplay").append("<li>" + i + "</li>");
-      }
-    })
-  }
 
-//front-end
+
 $(function(){
+  //submit stores input, calls PingPong function, displays results,
   $("form#form").submit(function(event){
     event.preventDefault();
     //store input as variable
     var userInput=$("#input").val();
-    //cars function for different behaviors
+    //call PingPong function
     PingPong(userInput);
-    //reset function
+
+    //display arrayOfNumbers after it has passed through PingPong function
+    arrayOfNumbers.forEach(function(number){
+    $(".outputDisplay").append("<li>"+number+"</li>");
+    $("#outputBox").show();
     $("#reset").show();
+    });
+  });
+    //When reset button is pressed, the below happens
     $("#reset").click(function(){
       userInput="";
-      arr=[];
-      $(".outputDisplay").text(arr);
+      arrayOfNumbers=[];
+      $(".outputDisplay").text(arrayOfNumbers);
+      $("#reset").hide();
+      $("#outputBox").hide();
     })
-  })
 });
