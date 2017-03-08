@@ -25,7 +25,7 @@ Clone this [repository](https://github.com/ofu997/PingPong), download or switch 
 | return numbers in range divisible by 5|10|[5,10]|
 | assign "Pong" string value to numbers divisible by 5|5|[1,2,3,4,"Pong"]|
 | Return numbers in range divisible by 3|6|[3,6]|
-|assign "Ping" string value to numbers divisible by 3|6|[1,2,"Ping",4,5,"Ping"]|
+|assign "Ping" string value to numbers divisible by 3|6|[1,2,"Ping",4,"Pong","Ping"]|
 |Display range of numbers and assigned string values|15|[1,2,"Ping",4,"Pong","Ping",7,8,"Ping","Pong",11,"Ping",13,14,"Ping-Pong"]|
 
 
